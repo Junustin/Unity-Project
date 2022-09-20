@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
-    
+    Rigidbody rb;
     public override void Awake()
     {
-        base.Awake();             
+        base.Awake();    
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     public override void TakeDamage(float Damage)
