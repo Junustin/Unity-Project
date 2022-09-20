@@ -15,9 +15,12 @@ public class Player : MonoBehaviour, IDamagable
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        Debug.Log(currentHealth);
         if(currentHealth <= 0)
-        {
+        {            
             //Die
+            Destroy(gameObject);
         }
     }
+
 }

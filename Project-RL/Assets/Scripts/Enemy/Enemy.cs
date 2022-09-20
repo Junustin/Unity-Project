@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour,IDamagable
 {
-    public float health;
+    public float health,damage;
+    public Player playerRef;
+    public virtual void Awake()
+    {
+        playerRef = FindObjectOfType<Player>();
+    }
 
     public virtual void TakeDamage(float Damage)
     {

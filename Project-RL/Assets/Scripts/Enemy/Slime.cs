@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
-    private void Start()
+    
+    public override void Awake()
     {
-        health = 20f;
+        base.Awake();             
     }
 
     public override void TakeDamage(float Damage)
@@ -17,6 +18,14 @@ public class Slime : Enemy
     public override void Attack()
     {
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerRef.TakeDamage(damage);
+        }    
     }
 
     public override void Die()
