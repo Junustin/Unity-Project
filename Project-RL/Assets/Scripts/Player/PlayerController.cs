@@ -23,10 +23,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        //Do it all time
-        Move();
-        GroundCheck();
-        //--------------
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)//Jump input check
         {
             Jump();//Jump
@@ -34,6 +30,10 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        //Do it all time
+        Move();
+        GroundCheck();
+        //--------------
     }
 
     private void Move()//Player movement function
