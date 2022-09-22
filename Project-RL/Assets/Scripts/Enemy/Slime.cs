@@ -1,23 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Slime : Enemy
 {
+    NavMeshAgent navMeshAgent;
     Rigidbody rb;
+
     public override void Awake()
     {
-        base.Awake();    
+        base.Awake();
+        navMeshAgent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        
     }
 
     private void FixedUpdate()
     {
+        navMeshAgent.destination = playerRef.transform.position;
         
     }
 
