@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Class of all enemy 
 public class Enemy : MonoBehaviour,IDamagable
 {
     public float health,damage;
