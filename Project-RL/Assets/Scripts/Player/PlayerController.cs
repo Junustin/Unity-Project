@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float groundCheckDistance;
     [SerializeField] LayerMask groundMask;
     //---------------
+    //Animaion
     private Animator animator;
+    //--------
     private void Start()
     {
         //GetComponent
