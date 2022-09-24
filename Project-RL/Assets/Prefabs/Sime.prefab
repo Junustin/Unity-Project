@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2366527280150159992}
   - component: {fileID: 8644096852563782805}
   - component: {fileID: 1991387775626396406}
-  - component: {fileID: 824793082184440049}
+  - component: {fileID: 8922128301514985955}
   m_Layer: 8
   m_Name: Sime
   m_TagString: Enemy
@@ -142,8 +142,8 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
---- !u!135 &824793082184440049
-SphereCollider:
+--- !u!136 &8922128301514985955
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -152,9 +152,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Height: 1.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.24, z: 0}
 --- !u!1 &5513269908811813011
 GameObject:
   m_ObjectHideFlags: 0
