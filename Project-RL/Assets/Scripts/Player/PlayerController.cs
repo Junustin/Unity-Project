@@ -13,10 +13,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float groundCheckDistance;
     [SerializeField] LayerMask groundMask;
     //---------------
+    private Animator animator;
     private void Start()
     {
         //GetComponent
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         //------------
     }
 
@@ -42,6 +44,7 @@ public class PlayerController : MonoBehaviour
         moveDir.Normalize();
         rb.MovePosition(rb.position + moveDir*walkSpeed*Time.deltaTime);
 
+        animator.SetFloat("MoveSpeed", moveDir.magnitude);
         /*if (moveDir != Vector3.zero)//Rotate character to face move direction
         {
             Quaternion rotation = Quaternion.LookRotation(moveDir, Vector3.up);
@@ -78,6 +81,7 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheckPosition.position, groundCheckDistance, groundMask);
         return isGrounded;
     }
+
     private void Jump()//Player jump function
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);//just add force can tweak force in inspector
