@@ -12,10 +12,14 @@ public class Player : MonoBehaviour, IDamagable
     private bool canTakeDamage = true;
     public float invisibleFrameTime = 1f;
     //----------
-
+    [SerializeField] Transform weaponSocket;
+    //Testing
+    public GameObject weapon;
+    //------------
     private void Start()
     {
         currentHealth = maxHealth;//Set current healh to max health when spawn            
+        EquipWeapon(weapon);
     }
 
     public void TakeDamage(float damage)//Take damage function
@@ -37,5 +41,10 @@ public class Player : MonoBehaviour, IDamagable
     {        
         yield return new WaitForSeconds(IFrameTime);
         canTakeDamage = true;        
+    }
+
+    public void EquipWeapon(GameObject _weapon)
+    {
+        Instantiate(_weapon, weaponSocket.position, Quaternion.identity,weaponSocket);
     }
 }
