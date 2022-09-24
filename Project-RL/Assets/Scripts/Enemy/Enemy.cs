@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour,IDamagable
     public Player playerRef;
     public virtual void Awake()
     {
-        playerRef = FindObjectOfType<Player>();
+        playerRef = FindObjectOfType<Player>();//Get player ref
     }
 
     public virtual void TakeDamage(float Damage)

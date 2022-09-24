@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Slime : Enemy
+public class Slime : Enemy,IDamagable
 {
     NavMeshAgent navMeshAgent;
     Rigidbody rb;
@@ -23,8 +23,7 @@ public class Slime : Enemy
 
     private void FixedUpdate()
     {
-        navMeshAgent.destination = playerRef.transform.position;//Move to player
-        
+        navMeshAgent.destination = playerRef.transform.position;//Move to player        
     }
 
     public override void TakeDamage(float Damage)
@@ -40,11 +39,14 @@ public class Slime : Enemy
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
         {
             playerRef.TakeDamage(damage);
         }
-        //Slime Hit effect
+        //Slime Hit effect                
     }
 
     public override void Die()

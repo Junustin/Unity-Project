@@ -6,14 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float walkSpeed, rotateSpeed, jumpForce;
     private Rigidbody rb;
+    [SerializeField] Camera cam;
     //GroundCheck Var
     private bool isGrounded;
     [SerializeField] Transform groundCheckPosition;
     [SerializeField] float groundCheckDistance;
     [SerializeField] LayerMask groundMask;
     //---------------
-
-
     private void Start()
     {
         //GetComponent
@@ -27,6 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             Jump();//Jump
         }
+        Aim();
     }
     private void FixedUpdate()
     {
@@ -42,10 +42,34 @@ public class PlayerController : MonoBehaviour
         moveDir.Normalize();
         rb.MovePosition(rb.position + moveDir*walkSpeed*Time.deltaTime);
 
-        if (moveDir != Vector3.zero)//Rotate character to face move direction
+        /*if (moveDir != Vector3.zero)//Rotate character to face move direction
         {
             Quaternion rotation = Quaternion.LookRotation(moveDir, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
+        }
+        */
+    }
+    private (bool success, Vector3 position) GetMousePosition()
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, groundMask))
+        {
+            return (success: true, position: hitInfo.point);
+        }
+        else
+        {
+            return (success: false, Vector3.zero);
+        }
+    }
+
+    private void Aim()
+    {
+        var (success, position) = GetMousePosition();
+        if (success)
+        {
+            var direction = position - transform.position;
+            direction.y = 0f;
+            transform.forward = direction;
         }
     }
 
