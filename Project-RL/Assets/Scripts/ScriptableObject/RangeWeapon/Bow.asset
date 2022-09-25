@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bow
   damage: 20
-  fireRate: 1
+  fireRate: 0.25
   projectile: {fileID: 1749815994848554685, guid: 276cc0b50b151424a9cb13d60bce700b, type: 3}

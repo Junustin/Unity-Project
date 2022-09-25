@@ -12,7 +12,7 @@ public class Arrow : MonoBehaviour
         //GetComponent
         rb = GetComponent<Rigidbody>();
         //------------
-        rb.AddForce(transform.forward * 20 ,ForceMode.VelocityChange);//Add force        
+        rb.AddForce(transform.forward * 50 ,ForceMode.VelocityChange);//Add force        
         Destroy(gameObject, 10);//Auto destroy after spawn for 10 sec
     }
     private void OnTriggerEnter(Collider other)
