@@ -29,5 +29,5 @@ public class Enemy : MonoBehaviour,IDamagable
     {
         Destroy(gameObject);
     }
-    
+   
 }
