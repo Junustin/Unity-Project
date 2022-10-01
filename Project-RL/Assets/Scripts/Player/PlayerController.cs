@@ -47,7 +47,8 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + moveDir*walkSpeed*Time.deltaTime);
 
         animator.SetFloat("MoveSpeed", moveDir.magnitude);
-        /*if (moveDir != Vector3.zero)//Rotate character to face move direction
+        /*
+        if (moveDir != Vector3.zero)//Rotate character to face move direction
         {
             Quaternion rotation = Quaternion.LookRotation(moveDir, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
         if (success)
         {
             var direction = position - transform.position;
-            direction.y = 0f;
+            //direction.y = 0f;
             transform.forward = direction;
         }
     }
