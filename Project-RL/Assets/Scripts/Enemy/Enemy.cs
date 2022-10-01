@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour,IDamagable
     }
     public virtual void Die()
     {
-        Destroy(gameObject);
+        Destroy(gameObject);        
     }
    
 }

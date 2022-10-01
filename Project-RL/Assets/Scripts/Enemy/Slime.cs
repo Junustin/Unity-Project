@@ -51,6 +51,7 @@ public class Slime : Enemy,IDamagable
 
     public override void Die()
     {
+        GameManager.instance.money++;
         base.Die();
         //Slime death animation
     }
