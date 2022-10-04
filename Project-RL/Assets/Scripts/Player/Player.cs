@@ -48,4 +48,12 @@ public class Player : MonoBehaviour
     {
         Instantiate(_weapon, weaponSocket.position, Quaternion.identity,weaponSocket);
     }
+
+    public void Heal(float _healAmount)//Call when heal
+    {
+        if(currentHealth < maxHealth)
+            currentHealth += _healAmount;
+        if(currentHealth >maxHealth)
+            currentHealth = maxHealth;
+    }
 }
