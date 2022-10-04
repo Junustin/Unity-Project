@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] Transform weaponSocket;
     //Testing
     public GameObject weapon;
-    //------------
+    //-------
     [SerializeField] Animator animator;
     private void Start()
     {

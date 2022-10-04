@@ -12,7 +12,7 @@ public class Arrow : MonoBehaviour
         //GetComponent
         rb = GetComponent<Rigidbody>();
         //------------
-        rb.AddForce(transform.forward * 50 ,ForceMode.VelocityChange);//Add force        
+        rb.AddForce(transform.forward * (50 + LevelManager.instance.bonusProjectileSpeed) ,ForceMode.VelocityChange);//Add force        
         Destroy(gameObject, 10);//Auto destroy after spawn for 10 sec
     }
     private void OnTriggerEnter(Collider other)
@@ -21,7 +21,7 @@ public class Arrow : MonoBehaviour
         if (damagable != null)
         {
             Debug.Log("Deal damage");
-            damagable.TakeDamage(pairWeaponData.damage);
+            damagable.TakeDamage(pairWeaponData.damage+LevelManager.instance.bonusDamage);
         }
         if (other.gameObject.tag != "Player") 
         {

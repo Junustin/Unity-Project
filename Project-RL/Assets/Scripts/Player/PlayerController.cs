@@ -44,16 +44,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveDir = new(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         moveDir.Normalize();
-        rb.MovePosition(rb.position + moveDir*walkSpeed*Time.deltaTime);
+        rb.MovePosition(rb.position + moveDir * (walkSpeed + LevelManager.instance.bonusMoveSpeed) *Time.deltaTime);
 
-        animator.SetFloat("MoveSpeed", moveDir.magnitude);
-        /*
-        if (moveDir != Vector3.zero)//Rotate character to face move direction
-        {
-            Quaternion rotation = Quaternion.LookRotation(moveDir, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
-        }
-        */
+        animator.SetFloat("MoveSpeed", moveDir.magnitude);        
     }
     private (bool success, Vector3 position) GetMousePosition()
     {
@@ -89,4 +82,5 @@ public class PlayerController : MonoBehaviour
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);//just add force can tweak force in inspector
     }
+    
 }

@@ -4,11 +4,24 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour 
 {
-    public static GameManager instance;
-    public float money;
+    public static GameManager instance = null;
+    public float money;   
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if(instance != this)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
     }
+    private void OnDestroy()
+    {
+        
+    }
+
 }
