@@ -5,21 +5,30 @@ using UnityEngine;
 public class MeleeWeapon : MonoBehaviour
 {
     [SerializeField] MeleeWeaponData meleeWeaponData;
-    [SerializeField] Collider coll;
+    [SerializeField] GameObject coll;
     private bool canAttack;
 
+    private void Start()
+    {
+        
+    }
     private void Update()
     {
         if (Input.GetMouseButtonDown(0)&&canAttack)
         {
-            Attack();
+            StartAttack();
             StartCoroutine("AttackSpeed");
         }
     }
 
-    private void Attack()
+    public void StartAttack()
     {
-        
+         coll.SetActive(true);
+    }
+
+    public void AttackEnded()
+    {
+        coll.SetActive(false);
     }
 
     IEnumerator AttackSpeed()

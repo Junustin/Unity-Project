@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     private (bool success, Vector3 position) GetMousePosition()
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, groundMask))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 50, groundMask))
         {
             return (success: true, position: hitInfo.point);
         }
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         if (success)
         {
             var direction = position - transform.position;
-            //direction.y = 0f;
+            direction.y = 0f;
             transform.forward = direction;
         }
     }

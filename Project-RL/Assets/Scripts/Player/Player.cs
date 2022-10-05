@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth;
     //----------
+    public float armor = 0f;
     //IFrame var
     private bool canTakeDamage = true;
     public float invisibleFrameTime = 1f;
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)//Take damage function
     {
+        damage -= armor;
         if (!canTakeDamage)//Check if can take damage if not return
             return;
         canTakeDamage = false;
