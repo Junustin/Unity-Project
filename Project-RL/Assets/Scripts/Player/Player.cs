@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     //Testing
     public GameObject weapon;
     //-------
-    [SerializeField] Animator animator;
+    
     private void Start()
     {
         currentHealth = maxHealth;//Set current healh to max health when spawn            

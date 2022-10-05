@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     //---------------
     //Animaion
-    private Animator animator;
+    public Animator animator;
     //--------
     private void Start()
     {
@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
         {
             Jump();//Jump
         }
+        
         Aim();
     }
     private void FixedUpdate()

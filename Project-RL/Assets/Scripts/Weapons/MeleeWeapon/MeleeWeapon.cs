@@ -6,23 +6,29 @@ public class MeleeWeapon : MonoBehaviour
 {
     [SerializeField] MeleeWeaponData meleeWeaponData;
     [SerializeField] GameObject coll;
-    private bool canAttack;
+    private PlayerController player;
+    private bool canAttack = true;
 
     private void Start()
     {
-        
+        player = FindObjectOfType<PlayerController>();
     }
     private void Update()
     {
         if (Input.GetMouseButtonDown(0)&&canAttack)
         {
-            StartAttack();
+            Attack();
             StartCoroutine("AttackSpeed");
         }
     }
 
+    private void Attack()
+    {        
+        player.animator.SetTrigger("SickleAttack_1");
+    }
+
     public void StartAttack()
-    {
+    {         
          coll.SetActive(true);
     }
 
