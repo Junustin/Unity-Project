@@ -17,11 +17,15 @@ public class Player : MonoBehaviour
     //Testing
     public GameObject weapon;
     //-------
-    
+
+    private void Awake()
+    {
+        //EquipWeapon(weapon);
+    }
     private void Start()
     {
         currentHealth = maxHealth;//Set current healh to max health when spawn            
-        EquipWeapon(weapon);
+        
     }
 
     public void TakeDamage(float damage)//Take damage function
@@ -48,7 +52,8 @@ public class Player : MonoBehaviour
 
     public void EquipWeapon(GameObject _weapon)
     {
-        Instantiate(_weapon, weaponSocket.position, Quaternion.identity,weaponSocket);
+        
+        Instantiate(_weapon, weaponSocket.position,Quaternion.identity, weaponSocket);
     }
 
     public void Heal(float _healAmount)//Call when heal

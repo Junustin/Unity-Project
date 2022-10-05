@@ -66,6 +66,37 @@ Transform:
   m_Father: {fileID: 4271079857495455459}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1286855970343322179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7694145537257861582}
+  m_Layer: 7
+  m_Name: WeaponSocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7694145537257861582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286855970343322179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6030102358962010475}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2247384380811522600
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +569,6 @@ Transform:
   - {fileID: 126238632334066140}
   - {fileID: 4006716835462842808}
   - {fileID: 9167952243600846854}
-  - {fileID: 9167952243681941768}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -586,10 +616,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  armor: 0
   invisibleFrameTime: 1
-  weaponSocket: {fileID: 9167952243681941768}
+  weaponSocket: {fileID: 7694145537257861582}
   weapon: {fileID: 6112420547335334362, guid: f8b0bc86ea535a347bc6dd88b8a90c76, type: 3}
-  animator: {fileID: 4170584784034880746}
 --- !u!114 &263984248147044155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +641,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  animator: {fileID: 0}
 --- !u!95 &4170584784034880746
 Animator:
   serializedVersion: 4
@@ -838,7 +869,7 @@ Transform:
   m_Children:
   - {fileID: 8787984453002575528}
   m_Father: {fileID: 6030102358962010475}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6381573906762068302
 GameObject:
@@ -1123,6 +1154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7694145537257861582}
   - {fileID: 4269358852590714885}
   m_Father: {fileID: 7604829376863499019}
   m_RootOrder: 0
@@ -1411,35 +1443,4 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5589019444882596168}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9167952243681941769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9167952243681941768}
-  m_Layer: 7
-  m_Name: 'WeaponSocket '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9167952243681941768
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9167952243681941769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.001, y: 0.352, z: 0.014}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5589019444882596168}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

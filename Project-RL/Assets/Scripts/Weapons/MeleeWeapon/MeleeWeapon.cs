@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeleeWeapon : MonoBehaviour
 {
     [SerializeField] MeleeWeaponData meleeWeaponData;
-    [SerializeField] GameObject coll;
+    [SerializeField] BoxCollider coll;
     private PlayerController player;
     private bool canAttack = true;
 
@@ -29,18 +29,29 @@ public class MeleeWeapon : MonoBehaviour
 
     public void StartAttack()
     {         
-         coll.SetActive(true);
+         coll.enabled = true;
     }
 
     public void AttackEnded()
     {
-        coll.SetActive(false);
+        coll.enabled = false;
     }
+
+
 
     IEnumerator AttackSpeed()
     {
         canAttack = false;
         yield return new WaitForSeconds(meleeWeaponData.attackSpeed);
         canAttack = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        IDamagable damagable = other.gameObject.GetComponent<IDamagable>();
+        if (damagable != null)
+        {            
+            damagable.TakeDamage(meleeWeaponData.damage);
+        }
     }
 }
