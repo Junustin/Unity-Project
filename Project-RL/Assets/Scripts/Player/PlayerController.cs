@@ -46,8 +46,14 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = new(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         moveDir.Normalize();
         rb.MovePosition(rb.position + moveDir * (walkSpeed + LevelManager.instance.bonusMoveSpeed) *Time.deltaTime);
-
-        animator.SetFloat("MoveSpeed", moveDir.magnitude);        
+        if (moveDir.normalized != Vector3.zero)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
     }
     private (bool success, Vector3 position) GetMousePosition()
     {

@@ -24,7 +24,7 @@ public class MeleeWeapon : MonoBehaviour
 
     private void Attack()
     {        
-        player.animator.SetTrigger("SickleAttack_1");
+        
     }
 
     public void StartAttack()
