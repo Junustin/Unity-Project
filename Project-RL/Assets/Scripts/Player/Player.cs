@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
     public void EquipWeapon(GameObject _weapon)
     {
         
-        Instantiate(_weapon, weaponSocket.position,Quaternion.identity, weaponSocket);
+        Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
     }
 
     public void Heal(float _healAmount)//Call when heal
