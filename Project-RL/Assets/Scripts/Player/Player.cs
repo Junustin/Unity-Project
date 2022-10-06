@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        //EquipWeapon(weapon);
+        EquipWeapon(weapon);
     }
     private void Start()
     {
