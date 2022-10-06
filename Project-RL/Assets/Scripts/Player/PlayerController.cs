@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     //Animaion
     public Animator animator;
     //--------
+    
     private void Start()
     {
         //GetComponent
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)//Jump input check
         {
             Jump();//Jump
-        }
+        }        
         
         Aim();
     }
