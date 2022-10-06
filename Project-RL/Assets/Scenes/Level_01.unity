@@ -5453,7 +5453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: c9bde36542285ae41849f0a3793bb24e, type: 3}
       propertyPath: m_Name
-      value: Test
+      value: Pillar
       objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: c9bde36542285ae41849f0a3793bb24e, type: 3}
       propertyPath: m_Layer
