@@ -23,8 +23,8 @@ public class MeleeWeapon : MonoBehaviour
     }
 
     private void Attack()
-    {        
-        
+    {
+        player.animator.SetTrigger("IsAttacking");
     }
 
     public void StartAttack()
