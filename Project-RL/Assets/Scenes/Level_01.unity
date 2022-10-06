@@ -1343,10 +1343,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 6816799530565749090, guid: 48f6f73357a417b4daf2c221fb4b062f, type: 3}
-      propertyPath: weapon
-      value: 
-      objectReference: {fileID: 1981723940044144497, guid: 8188288ffde2624458486831323cfba9, type: 3}
     - target: {fileID: 7106268938667455495, guid: 48f6f73357a417b4daf2c221fb4b062f, type: 3}
       propertyPath: cam
       value: 
