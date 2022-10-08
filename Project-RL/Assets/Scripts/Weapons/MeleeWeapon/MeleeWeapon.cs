@@ -47,11 +47,12 @@ public class MeleeWeapon : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    {        
         IDamagable damagable = other.gameObject.GetComponent<IDamagable>();
+        
         if (damagable != null)
-        {            
-            damagable.TakeDamage(meleeWeaponData.damage);
+        {
+            damagable.TakeDamage(meleeWeaponData.damage + LevelManager.instance.bonusDamage);
         }
     }
 }

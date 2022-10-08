@@ -16,11 +16,13 @@ public class Player : MonoBehaviour
     [SerializeField] Transform weaponSocket;
     //Testing
     public GameObject weapon;
+    private MeleeWeapon meleeWeapon;
     //-------
 
     private void Awake()
     {
         EquipWeapon(weapon);
+        meleeWeapon = GetComponentInChildren<MeleeWeapon>();
     }
     private void Start()
     {
@@ -52,7 +54,6 @@ public class Player : MonoBehaviour
 
     public void EquipWeapon(GameObject _weapon)
     {
-        
         Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
     }
 
@@ -62,5 +63,15 @@ public class Player : MonoBehaviour
             currentHealth += _healAmount;
         if(currentHealth >maxHealth)
             currentHealth = maxHealth;
+    }
+
+    public void EnableAttackHitbox()
+    {
+        meleeWeapon.StartAttack();
+    }
+
+    public void DisableAttackHitbox()
+    {
+        meleeWeapon.AttackEnded();
     }
 }

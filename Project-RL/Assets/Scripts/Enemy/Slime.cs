@@ -29,9 +29,20 @@ public class Slime : Enemy,IDamagable
     public override void TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
+        Debug.Log(health);
+        
+        Vector3 knockBackDir = (transform.position - playerRef.transform.position).normalized;
+        rb.AddForce( knockBackDir * 10,ForceMode.Impulse);
+        StartCoroutine("KnockBackTimer",0.1f);
+        
         //Slime take damage animation
     }
 
+    IEnumerator KnockBackTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        rb.velocity = Vector3.zero;
+    }
     public override void Attack()
     {
         //No attack
