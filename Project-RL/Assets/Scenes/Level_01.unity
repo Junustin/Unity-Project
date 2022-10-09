@@ -39,10 +39,14 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.043435, g: 0.034844138, b: 0.020370755, a: 1}
 =======
   m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+  m_IndirectSpecularColor: {r: 0.043508064, g: 0.034912094, b: 0.020411024, a: 1}
+>>>>>>> parent of feda6ae (_Monster)
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -292,6 +296,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 12
 =======
   m_RootOrder: 14
@@ -299,6 +304,9 @@ Transform:
 =======
   m_RootOrder: 12
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+  m_RootOrder: 13
+>>>>>>> parent of feda6ae (_Monster)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &48424385
 MonoBehaviour:
@@ -385,6 +393,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 4
 =======
       value: 6
@@ -392,6 +401,9 @@ PrefabInstance:
 =======
       value: 4
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+      value: 5
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -685,6 +697,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 10
 =======
   m_RootOrder: 12
@@ -692,6 +705,9 @@ Transform:
 =======
   m_RootOrder: 10
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+  m_RootOrder: 11
+>>>>>>> parent of feda6ae (_Monster)
   m_LocalEulerAnglesHint: {x: 37.699, y: -23.977, z: -0.095}
 --- !u!114 &132559082
 MonoBehaviour:
@@ -1331,6 +1347,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2
 =======
       value: 4
@@ -1338,6 +1355,9 @@ PrefabInstance:
 =======
       value: 1
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+      value: 3
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1513,6 +1533,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 8
 =======
       value: 10
@@ -1520,6 +1541,9 @@ PrefabInstance:
 =======
       value: 7
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+      value: 9
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 3498282475614958847, guid: 48f6f73357a417b4daf2c221fb4b062f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1703,63 +1727,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f6f73357a417b4daf2c221fb4b062f, type: 3}
---- !u!1001 &541404651
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16.916155
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.710854
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 18.075562
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
-      propertyPath: m_Name
-      value: Pose__Monster
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ab72ccb170d871842aecebe89cfe5fea, type: 3}
 --- !u!1 &548194144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7235015103121818086, guid: c9bde36542285ae41849f0a3793bb24e, type: 3}
@@ -2032,10 +1999,14 @@ PrefabInstance:
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
 =======
       value: 3
 >>>>>>> feda6aea1cfc90ea045be744c6230697f01c7764
+=======
+      value: 2
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2193,10 +2164,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 9
 =======
   m_RootOrder: 11
 >>>>>>> feda6aea1cfc90ea045be744c6230697f01c7764
+=======
+  m_RootOrder: 10
+>>>>>>> parent of feda6ae (_Monster)
   m_LocalEulerAnglesHint: {x: -7.379, y: -55.853, z: -57.974}
 =======
   m_RootOrder: 9
@@ -2476,6 +2451,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 5
 =======
       value: 7
@@ -2483,6 +2459,9 @@ PrefabInstance:
 =======
       value: 5
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+      value: 6
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2818,6 +2797,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 3
 =======
       value: 5
@@ -2825,6 +2805,9 @@ PrefabInstance:
 =======
       value: 3
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+      value: 4
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3257,6 +3240,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 14
 =======
   m_RootOrder: 16
@@ -3264,6 +3248,9 @@ Transform:
 =======
   m_RootOrder: 14
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+  m_RootOrder: 15
+>>>>>>> parent of feda6ae (_Monster)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040762573 stripped
 GameObject:
@@ -3690,6 +3677,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 6
 =======
       value: 8
@@ -3697,6 +3685,9 @@ PrefabInstance:
 =======
       value: 6
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+      value: 7
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: 2366527280150159996, guid: d7c1d046aea075244ad632ed92910ab0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3829,6 +3820,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 13
 =======
   m_RootOrder: 15
@@ -3836,6 +3828,9 @@ Transform:
 =======
   m_RootOrder: 13
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+  m_RootOrder: 14
+>>>>>>> parent of feda6ae (_Monster)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224416785 stripped
 GameObject:
@@ -5285,6 +5280,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 11
 =======
   m_RootOrder: 13
@@ -5292,6 +5288,9 @@ Transform:
 =======
   m_RootOrder: 11
 >>>>>>> parent of 4ccd5c8 (Light)
+=======
+  m_RootOrder: 12
+>>>>>>> parent of feda6ae (_Monster)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1678239134 stripped
 GameObject:
@@ -5580,10 +5579,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c9bde36542285ae41849f0a3793bb24e, type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 7
 =======
       value: 9
 >>>>>>> feda6aea1cfc90ea045be744c6230697f01c7764
+=======
+      value: 8
+>>>>>>> parent of feda6ae (_Monster)
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c9bde36542285ae41849f0a3793bb24e, type: 3}
       propertyPath: m_LocalScale.x
@@ -7383,7 +7386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3938948657319214714, guid: 959d11085fdd66d488d811d70233233d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3938948657319214714, guid: 959d11085fdd66d488d811d70233233d, type: 3}
       propertyPath: m_LocalPosition.x
