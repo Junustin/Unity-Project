@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour,IDamagable
 {
     public float health,damage,knockBackAmount;
     public Player playerRef;
+    public GameObject deadParticle;
+
     
     public virtual void Awake()
     {
@@ -28,7 +30,9 @@ public class Enemy : MonoBehaviour,IDamagable
     }
     public virtual void Die()
     {
-        Destroy(gameObject);        
+        
+        Instantiate(deadParticle, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
    
 }
