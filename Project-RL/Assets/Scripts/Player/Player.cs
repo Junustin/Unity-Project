@@ -18,9 +18,11 @@ public class Player : MonoBehaviour
     public GameObject weapon;
     private MeleeWeapon meleeWeapon;
     //-------
+    private Rigidbody rb;
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         EquipWeapon(weapon);
         meleeWeapon = GetComponentInChildren<MeleeWeapon>();
     }
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
         StartCoroutine(InvisibleFrame(invisibleFrameTime));//Set timer for IFrame to deactivate
+        //KnockBack
     }
 
     IEnumerator InvisibleFrame(float IFrameTime)//IFrame timer
@@ -57,6 +60,17 @@ public class Player : MonoBehaviour
         Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
     }
 
+    public void KnockBackOnHit(Transform enemyTransfrom,float knockBackForce)
+    {
+        Vector3 hitDir = (transform.position - enemyTransfrom.position).normalized;
+        rb.AddForce(hitDir * knockBackForce, ForceMode.Impulse);
+        StartCoroutine("KnockBackTimer",1f);
+    }
+    IEnumerator KnockBackTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        rb.velocity = Vector3.zero;
+    }
     public void Heal(float _healAmount)//Call when heal
     {
         if(currentHealth < maxHealth)

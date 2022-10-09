@@ -56,6 +56,7 @@ public class Slime : Enemy,IDamagable
         if (other.gameObject.tag == "Player")
         {
             playerRef.TakeDamage(damage);
+            playerRef.KnockBackOnHit(this.transform,knockBackAmount);
         }
         //Slime Hit effect                
     }
