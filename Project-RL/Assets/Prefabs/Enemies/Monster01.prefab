@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 3887659139053845469}
   - component: {fileID: 8308920110186393302}
   - component: {fileID: 881769348975044991}
+  - component: {fileID: 4440250809250116531}
   m_Layer: 0
   m_Name: Monster01
   m_TagString: Untagged
@@ -513,7 +514,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -555,6 +556,23 @@ CapsuleCollider:
   m_Height: 1.080308
   m_Direction: 1
   m_Center: {x: 0, y: 0.4952159, z: 0}
+--- !u!114 &4440250809250116531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4121590471925415193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca924e4073f44b4380f0ff4f46d56da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  damage: 20
+  knockBackAmount: 100
+  playerRef: {fileID: 0}
+  deadParticle: {fileID: 79234816763454926, guid: 228eb57f44844e241bc6f5069d6d8959, type: 3}
 --- !u!1 &4248792202070613570
 GameObject:
   m_ObjectHideFlags: 0
