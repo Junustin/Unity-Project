@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 //Class of all enemy 
 public class Enemy : MonoBehaviour,IDamagable
