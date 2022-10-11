@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1868737970560296311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2560668053150210324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8156149526439936624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7683639520177330928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pasted__pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3393960117604781818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4035647980295749936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 788769723722343088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5330685222259531732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 2672781883943582469}
   - component: {fileID: 8949715143403990141}
   - component: {fileID: 6757007900905069558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 8341387403846644259}
   - component: {fileID: 6408207187878740970}
   - component: {fileID: 5114592307910904081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3636448083178231988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8302938240590545909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7602317646162484750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5038631205516336999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6016832287964405640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859920772118030521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pasted__pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -629,7 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7831439080998139256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -661,7 +661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 988779648216439444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7818949253682724099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4280820926401121503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 6633330216158355713}
   - component: {fileID: 6562815651546274243}
   - component: {fileID: 5602477102511390690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7363582100765938929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155535343902105133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4421234852532766862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5489398557944712717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5231501408178481273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -999,7 +999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6996489289104057886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3225989987236041658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8025567003727765924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8131200960777683547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1125,7 +1125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8493469750061728480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1158,7 +1158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3388012866436057071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1190,7 +1190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2619846036194186001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1222,7 +1222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4961129316842659413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,7 +1253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7689388057858125603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1284,7 +1284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3014466742224797405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,7 +1319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8151421721653808899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,7 +1350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 364847447306708569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1382,7 +1382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2915432323632432497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1414,7 +1414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6563407897554669712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4300509097409326939}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7077394921282921998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3063916233542856554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 2732255191172200614}
   - component: {fileID: 3985279795831075898}
   - component: {fileID: 1199258322867876192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1629,7 +1629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6215296007329932880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 6786533546797631}
   - component: {fileID: 7341676595813648582}
   - component: {fileID: 6017583606858585890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,7 +1744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5745097762726051690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1776,7 +1776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582684938844339766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 789412501678593059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1839,7 +1839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114121662197608398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6276238758300873849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1909,7 +1909,7 @@ GameObject:
   - component: {fileID: 7577374187388576129}
   - component: {fileID: 7435951298027035790}
   - component: {fileID: 1358208204765235521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +1990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3914403060097994481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2021,7 +2021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1088144290481131079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2053,7 +2053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6204462567265596153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5067053465041550433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2577122410404185642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2150,7 +2150,7 @@ GameObject:
   - component: {fileID: 5912608428746050091}
   - component: {fileID: 3921167075380627258}
   - component: {fileID: 6462850505453610775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,7 +2233,7 @@ GameObject:
   - component: {fileID: 6248073295220675182}
   - component: {fileID: 4879310157266809069}
   - component: {fileID: 1556924200867708258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2316,7 +2316,7 @@ GameObject:
   - component: {fileID: 6914725027571239589}
   - component: {fileID: 816596416667803356}
   - component: {fileID: 6423663071251393799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pasted__pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2399,7 +2399,7 @@ GameObject:
   - component: {fileID: 6670822258448599346}
   - component: {fileID: 3994734438176475865}
   - component: {fileID: 8095926949745950408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2480,7 +2480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6075881521462752366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,7 +2512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 642004803861088290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2543,7 +2543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4416826305609974946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2575,7 +2575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4683694989737382501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2606,7 +2606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4961226451049687259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2637,7 +2637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6845572999550367083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2669,7 +2669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9209329342395764058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2702,7 +2702,7 @@ GameObject:
   - component: {fileID: 6454375816970168383}
   - component: {fileID: 2466761702925859261}
   - component: {fileID: 5076904151589318391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2783,7 +2783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5470553069233627298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2815,7 +2815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1191139979651385130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2849,7 +2849,7 @@ GameObject:
   - component: {fileID: 7658381795129017067}
   - component: {fileID: 2004534027188571401}
   - component: {fileID: 6098359952067957883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2930,7 +2930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4788039536659954896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2962,7 +2962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3073339313060240016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2994,7 +2994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3534243905383074870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3025,7 +3025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3700576128285718049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3057,7 +3057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4827061499152753241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__pasted__pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3089,7 +3089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3891368790739129502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3120,7 +3120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 562553532643292675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3160,7 +3160,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8595317026111180432}
   - component: {fileID: 2472959516923603175}
-  m_Layer: 0
+  - component: {fileID: 9032757113347160535}
+  m_Layer: 8
   m_Name: Baton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3196,8 +3197,22 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.3817966, y: 0.4968654, z: 0.3923548}
-  m_Center: {x: 0.013209939, y: 0.7703261, z: -0.009046018}
+  m_Size: {x: 0.3817966, y: 0.7286452, z: 0.3923548}
+  m_Center: {x: 0.013209939, y: 0.684735, z: -0.009046018}
+--- !u!114 &9032757113347160535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936095929481106474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a15f46965e78f4b8da840bec1e1b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeWeaponData: {fileID: 11400000, guid: 525d639c008c7104dbcfb83ac20d8315, type: 2}
+  coll: {fileID: 2472959516923603175}
 --- !u!1 &9013625790947631157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4330676629517137730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3238,7 +3253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7677568490382245003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pasted__group4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -494,10 +494,10 @@ Animator:
   m_GameObject: {fileID: 4121590471925415193}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e464a12f6f83b2046a741f659836413f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2f7672656353d04889c35b9be241249, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -514,7 +514,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -550,7 +550,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4121590471925415193}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.35
   m_Height: 1.080308
@@ -573,6 +573,12 @@ MonoBehaviour:
   knockBackAmount: 100
   playerRef: {fileID: 0}
   deadParticle: {fileID: 79234816763454926, guid: 228eb57f44844e241bc6f5069d6d8959, type: 3}
+  weapon: {fileID: 0}
+  playerInAttackRange: 0
+  attackRange: 0.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &4248792202070613570
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,26 +4,30 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class Monster01 : Enemy,IDamagable
+public class Monster01 : Enemy, IDamagable
 {
     NavMeshAgent navMeshAgent;
     Rigidbody rb;
-    EnemyWeapon weapon;
+    [SerializeField] EnemyWeapon weapon;
     [SerializeField] bool playerInAttackRange;
     [SerializeField] float attackRange;
     [SerializeField] LayerMask playerMask;
+    Animator animator;
+    bool canAttack = true;
+    bool run;
 
     public override void Awake()
     {
         base.Awake();
         navMeshAgent=GetComponent<NavMeshAgent>();
-        rb=GetComponent<Rigidbody>();
-        weapon = GetComponentInChildren<EnemyWeapon>();
+        rb=GetComponent<Rigidbody>(); 
+        weapon=GetComponentInChildren<EnemyWeapon>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
-        navMeshAgent.destination = playerRef.transform.position;                                                        
+                                                                
     }
 
     public override void TakeDamage(float Damage)
@@ -43,16 +47,48 @@ public class Monster01 : Enemy,IDamagable
 
     private void Update()
     {
+
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerMask);
-        if (playerInAttackRange) Attack();
+
+        if (playerInAttackRange&&canAttack)
+        {
+            Attack();
+        }
+        else if (!playerInAttackRange)
+        {
+            MoveToPlayer();
+        }
+
+        if(rb.velocity != Vector3.zero)
+        {
+            run = true;
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            run=false;
+            animator.SetBool("IsRunning", false);
+        }
+    }
+
+    private void MoveToPlayer()
+    {
+        navMeshAgent.SetDestination(playerRef.transform.position);
     }
 
     public override void Attack()
     {
-        base.Attack();
-        navMeshAgent.SetDestination(transform.position);
+        canAttack = false;
+        navMeshAgent.SetDestination(transform.position); 
         transform.LookAt(playerRef.transform);
-        //Set anim
+        animator.SetTrigger("Attack");
+        StartCoroutine(AttackSpeed());     
+    }
+
+    IEnumerator AttackSpeed()
+    {        
+        yield return new WaitForSeconds(weapon.meleeWeaponData.attackSpeed);
+        canAttack = true;
     }
     //Event will call on attack animation play
     public void EnableAttackHitbox()

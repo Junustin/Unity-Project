@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnemyWeapon : MonoBehaviour
 {
-    [SerializeField] MeleeWeaponData meleeWeaponData;
+    public MeleeWeaponData meleeWeaponData;
     [SerializeField] BoxCollider coll;
     private Player player;
-    private bool canAttack = true;
+    
 
     private void Start()
     {
@@ -26,17 +26,7 @@ public class EnemyWeapon : MonoBehaviour
     public void AttackEnded()
     {
         coll.enabled = false;
-    }
-
-
-
-    IEnumerator AttackSpeed()
-    {
-        canAttack = false;
-        yield return new WaitForSeconds(meleeWeaponData.attackSpeed);
-        canAttack = true;
-    }
-
+    }    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
