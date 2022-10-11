@@ -3160,7 +3160,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8595317026111180432}
   - component: {fileID: 2472959516923603175}
-  - component: {fileID: 302960485918348283}
   m_Layer: 0
   m_Name: Baton
   m_TagString: Untagged
@@ -3199,20 +3198,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3817966, y: 0.4968654, z: 0.3923548}
   m_Center: {x: 0.013209939, y: 0.7703261, z: -0.009046018}
---- !u!114 &302960485918348283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936095929481106474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e53db4659c8024ea99d2031ef7894b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meleeWeaponData: {fileID: 11400000, guid: 525d639c008c7104dbcfb83ac20d8315, type: 2}
-  coll: {fileID: 2472959516923603175}
 --- !u!1 &9013625790947631157
 GameObject:
   m_ObjectHideFlags: 0

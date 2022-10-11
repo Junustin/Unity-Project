@@ -8,17 +8,22 @@ public class Monster01 : Enemy,IDamagable
 {
     NavMeshAgent navMeshAgent;
     Rigidbody rb;
+    EnemyWeapon weapon;
+    [SerializeField] bool playerInAttackRange;
+    [SerializeField] float attackRange;
+    [SerializeField] LayerMask playerMask;
 
     public override void Awake()
     {
         base.Awake();
         navMeshAgent=GetComponent<NavMeshAgent>();
         rb=GetComponent<Rigidbody>();
+        weapon = GetComponentInChildren<EnemyWeapon>();
     }
 
     private void FixedUpdate()
     {
-        navMeshAgent.destination = playerRef.transform.position;//Move to player        
+        navMeshAgent.destination = playerRef.transform.position;                                                        
     }
 
     public override void TakeDamage(float Damage)
@@ -36,6 +41,30 @@ public class Monster01 : Enemy,IDamagable
         rb.velocity = Vector3.zero;
     }
 
+    private void Update()
+    {
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerMask);
+        if (playerInAttackRange) Attack();
+    }
+
+    public override void Attack()
+    {
+        base.Attack();
+        navMeshAgent.SetDestination(transform.position);
+        transform.LookAt(playerRef.transform);
+        //Set anim
+    }
+    //Event will call on attack animation play
+    public void EnableAttackHitbox()
+    {
+        weapon.StartAttack();
+    }
+    
+    public void DisableAttackHitbox()
+    {
+        weapon.AttackEnded();
+    }
+    //----------------------------------------
     public override void Die()
     {
         base.Die();
