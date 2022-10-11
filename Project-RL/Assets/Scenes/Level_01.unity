@@ -1957,7 +1957,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
@@ -6980,6 +6980,14 @@ PrefabInstance:
     - target: {fileID: 4121590471925415193, guid: 7db29a2ed00839b48bbbe9664630f3a7, type: 3}
       propertyPath: m_Name
       value: Monster01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440250809250116531, guid: 7db29a2ed00839b48bbbe9664630f3a7, type: 3}
+      propertyPath: attackRange
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440250809250116531, guid: 7db29a2ed00839b48bbbe9664630f3a7, type: 3}
+      propertyPath: playerMask.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db29a2ed00839b48bbbe9664630f3a7, type: 3}
