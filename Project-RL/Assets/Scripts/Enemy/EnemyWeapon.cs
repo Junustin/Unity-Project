@@ -31,8 +31,7 @@ public class EnemyWeapon : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {          
-            player.TakeDamage(meleeWeaponData.damage);
-            player.KnockBackOnHit(this.transform, 100f);
+            player.TakeDamage(meleeWeaponData.damage,this.transform,meleeWeaponData.knockBackForce);            
         }
     }
 }

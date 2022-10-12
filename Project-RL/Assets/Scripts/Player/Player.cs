@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         
     }
 
-    public void TakeDamage(float damage)//Take damage function
+    public void TakeDamage(float damage,Transform enemyTransform,float knockBackForce)//Take damage function
     {
         damage -= armor;
         if (!canTakeDamage)//Check if can take damage if not return
@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
             //Die animation
             Destroy(gameObject);
         }
+        KnockBackOnHit(enemyTransform, knockBackForce);
         StartCoroutine(InvisibleFrame(invisibleFrameTime));//Set timer for IFrame to deactivate
         //KnockBack
     }
@@ -55,10 +56,6 @@ public class Player : MonoBehaviour
         canTakeDamage = true;        
     }
 
-    public void EquipWeapon(GameObject _weapon)
-    {
-        Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
-    }
 
     public void KnockBackOnHit(Transform enemyTransfrom,float knockBackForce)
     {
@@ -70,6 +67,10 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         rb.velocity = Vector3.zero;
+    }
+    public void EquipWeapon(GameObject _weapon)
+    {
+        Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
     }
     public void Heal(float _healAmount)//Call when heal
     {
