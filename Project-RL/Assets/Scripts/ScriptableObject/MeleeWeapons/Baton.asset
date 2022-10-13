@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Baton
   m_EditorClassIdentifier: 
   name: Baton
-  damage: 30
+  damage: 20
   attackSpeed: 1
-  knockBackForce: 100
+  knockBackForce: 50

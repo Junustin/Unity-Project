@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
     public void KnockBackOnHit(Transform enemyTransfrom,float knockBackForce)
     {
         Vector3 hitDir = (transform.position - enemyTransfrom.position).normalized;
+        hitDir.y = 0;
         rb.AddForce(hitDir * knockBackForce, ForceMode.Impulse);
         StartCoroutine("KnockBackTimer",1f);
     }
