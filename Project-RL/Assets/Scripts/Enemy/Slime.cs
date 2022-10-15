@@ -29,7 +29,7 @@ public class Slime : Enemy,IDamagable
     public override void TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
-        Debug.Log(health);
+        
         
         Vector3 knockBackDir = (transform.position - playerRef.transform.position).normalized;
         rb.AddForce( knockBackDir * 10,ForceMode.Impulse);

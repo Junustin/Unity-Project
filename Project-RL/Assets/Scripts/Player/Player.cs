@@ -38,7 +38,8 @@ public class Player : MonoBehaviour
         if (!canTakeDamage)//Check if can take damage if not return
             return;
         canTakeDamage = false;
-        currentHealth -= damage;        
+        currentHealth -= damage;
+        CameraShake.Instance.ShakeCam(5f,.1f);
         Debug.Log(currentHealth);
         if(currentHealth <= 0)
         {                        
