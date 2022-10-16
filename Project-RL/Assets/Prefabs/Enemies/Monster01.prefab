@@ -572,14 +572,14 @@ MonoBehaviour:
   damage: 20
   knockBackAmount: 100
   playerRef: {fileID: 0}
-  deadParticle: {fileID: 79234816763454926, guid: 228eb57f44844e241bc6f5069d6d8959, type: 3}
-  weapon: {fileID: 0}
+  spawnEffect: {fileID: 7984074020229615658, guid: c84b5fe20f5c7bb41ae63b393d3e2f44, type: 3}
+  deatheffect: {fileID: 2385679053528318946, guid: af0ad730169d10c4f8677df230ba8e1d, type: 3}
+  weapon: {fileID: 9032757113347160535, guid: f6cb99193a10fff4ea8ff1a8a4969a95, type: 3}
   playerInAttackRange: 0
   attackRange: 0.5
   playerMask:
     serializedVersion: 2
     m_Bits: 128
-  spawnEffect: {fileID: 7984074020229615658, guid: c84b5fe20f5c7bb41ae63b393d3e2f44, type: 3}
 --- !u!1 &4248792202070613570
 GameObject:
   m_ObjectHideFlags: 0

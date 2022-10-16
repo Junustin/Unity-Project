@@ -15,14 +15,10 @@ public class Monster01 : Enemy, IDamagable
     [SerializeField] LayerMask playerMask;
     Animator animator;
     bool canAttack = true;
-    [SerializeField] VisualEffect spawnEffect;
     
-    
-
     public override void Awake()
     {
-        base.Awake();
-        Instantiate(spawnEffect,transform.position, transform.rotation);
+        base.Awake();        
         navMeshAgent=GetComponent<NavMeshAgent>();
         rb=GetComponent<Rigidbody>(); 
         weapon=GetComponentInChildren<EnemyWeapon>();
@@ -114,7 +110,7 @@ public class Monster01 : Enemy, IDamagable
     //----------------------------------------
     public override void Die()
     {
-        base.Die();
+        base.Die();        
         CameraShake.Instance.ShakeCam(5f, .1f);
     }
 }

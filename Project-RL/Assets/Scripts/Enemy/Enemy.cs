@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.VFX;
 
 
 //Class of all enemy 
@@ -9,14 +10,15 @@ public class Enemy : MonoBehaviour,IDamagable
 {
     public float health,damage,knockBackAmount;
     public Player playerRef;
-    public GameObject deadParticle;
+    public VisualEffect spawnEffect;
+    public VisualEffect deatheffect;
     
 
     
     public virtual void Awake()
     {
         playerRef = FindObjectOfType<Player>();//Get player ref
-        
+        Instantiate(spawnEffect, transform.position, transform.rotation);
     }
 
     public virtual void TakeDamage(float Damage)
@@ -34,8 +36,7 @@ public class Enemy : MonoBehaviour,IDamagable
     }
     public virtual void Die()
     {
-        
-        Instantiate(deadParticle, transform.position, Quaternion.identity);
+        Instantiate(deatheffect,transform.position,transform.rotation);     
         Destroy(gameObject);
     }
    
