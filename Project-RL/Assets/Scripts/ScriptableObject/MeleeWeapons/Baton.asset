@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Baton
   damage: 20
   attackSpeed: 1
-  knockBackForce: 50
+  knockBackForce: 40

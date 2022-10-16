@@ -579,6 +579,7 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+  spawnEffect: {fileID: 7984074020229615658, guid: c84b5fe20f5c7bb41ae63b393d3e2f44, type: 3}
 --- !u!1 &4248792202070613570
 GameObject:
   m_ObjectHideFlags: 0
