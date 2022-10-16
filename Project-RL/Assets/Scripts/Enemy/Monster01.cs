@@ -33,7 +33,7 @@ public class Monster01 : Enemy, IDamagable
     public override void TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
-        CameraShake.Instance.ShakeCam(2f, .1f);
+        CameraShake.Instance.ShakeCam(5f, .1f);
         Vector3 knockBackDir = (transform.position - playerRef.transform.position).normalized;
         rb.AddForce(knockBackDir * 10, ForceMode.Impulse);
         StartCoroutine("KnockBackTimer", 0.1f);
