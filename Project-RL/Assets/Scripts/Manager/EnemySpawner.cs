@@ -13,8 +13,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(SpawnEnemy(batonEnemyPrefab, batonEnemyInterval));
-        Destroy(boxTrigger);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(SpawnEnemy(batonEnemyPrefab, batonEnemyInterval));
+            Destroy(boxTrigger);
+        }
     }
 
     IEnumerator SpawnEnemy(GameObject enemy,float interval)

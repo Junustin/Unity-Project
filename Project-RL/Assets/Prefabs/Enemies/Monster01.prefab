@@ -571,7 +571,7 @@ MonoBehaviour:
   health: 20
   damage: 20
   contactDamageKnockBackAmount: 50
-  knockBackWhenHitAmount: 25
+  knockBackWhenHitAmount: 15
   playerRef: {fileID: 0}
   rb: {fileID: 0}
   navMeshAgent: {fileID: 0}
