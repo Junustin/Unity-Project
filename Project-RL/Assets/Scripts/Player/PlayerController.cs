@@ -62,10 +62,10 @@ public class PlayerController : MonoBehaviour
     }
     private (bool success, Vector3 position) GetMousePosition()
     {
+        
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, 50, groundMask))
-        {
-            
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, groundMask))
+        { 
             return (success: true, position: hitInfo.point);
         }
         else

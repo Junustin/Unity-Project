@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour 
 {
-    public static GameManager instance = null;
-    public float money;   
+    public static GameManager instance = null;  
 
     private void Awake()
     {
@@ -17,7 +16,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
@@ -34,11 +32,8 @@ public class GameManager : MonoBehaviour
 
     public void ReloadCurrentScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-    private void OnDestroy()
-    {
         
-    }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
+    }
 }

@@ -29,11 +29,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;//Set current healh to max health when spawn            
-        
-    }
-    private void OnDestroy()
-    {
-        GameManager.instance.ReloadCurrentScene();
+
     }
 
     public void TakeDamage(float damage,Transform enemyTransform,float knockBackForce)//Take damage function
@@ -46,14 +42,21 @@ public class Player : MonoBehaviour
         CameraShake.Instance.ShakeCam(5f,.1f);
         Debug.Log(currentHealth);
         if(currentHealth <= 0)
-        {                        
-            //Die animation
-            Destroy(gameObject);
+        {
+            Die();
         }
         KnockBackOnHit(enemyTransform, knockBackForce);
         StartCoroutine(InvisibleFrame(invisibleFrameTime));//Set timer for IFrame to deactivate
         //KnockBack
     }
+
+    public void Die()
+    {
+        //Die animation
+        GameManager.instance.ReloadCurrentScene();
+        Destroy(gameObject);
+    }
+    
 
     IEnumerator InvisibleFrame(float IFrameTime)//IFrame timer
     {        

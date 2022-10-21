@@ -8,7 +8,8 @@ public class KillZone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            Player player = other.GetComponent<Player>();
+            player.Die();
         }
     }
 }
