@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sickle
   damage: 10
-  attackSpeed: 1
+  attackSpeed: 0.5
+  knockBackForce: 10

@@ -17,11 +17,13 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     //--------
     
+    
     private void Start()
     {
         //GetComponent
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();  
+        
         //------------
     }
 
@@ -47,12 +49,14 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = new(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         moveDir.Normalize();
         rb.MovePosition(rb.position + moveDir * (walkSpeed + LevelManager.instance.bonusMoveSpeed) *Time.deltaTime);
-        if (moveDir.normalized != Vector3.zero)
+        if (moveDir != Vector3.zero)
         {
+            
             animator.SetBool("IsRunning", true);
         }
         else
         {
+            
             animator.SetBool("IsRunning", false);
         }
     }
@@ -61,6 +65,7 @@ public class PlayerController : MonoBehaviour
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hitInfo, 50, groundMask))
         {
+            
             return (success: true, position: hitInfo.point);
         }
         else
@@ -89,6 +94,7 @@ public class PlayerController : MonoBehaviour
     private void Jump()//Player jump function
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);//just add force can tweak force in inspector
+        
     }
     
 }

@@ -8,4 +8,5 @@ public class MeleeWeaponData : ScriptableObject
     public new string name;
     public float damage;
     public float attackSpeed;
+    public float knockBackForce;
 }

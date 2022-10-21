@@ -31,20 +31,26 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;//Set current healh to max health when spawn            
         
     }
+    private void OnDestroy()
+    {
+        GameManager.instance.ReloadCurrentScene();
+    }
 
-    public void TakeDamage(float damage)//Take damage function
+    public void TakeDamage(float damage,Transform enemyTransform,float knockBackForce)//Take damage function
     {
         damage -= armor;
         if (!canTakeDamage)//Check if can take damage if not return
             return;
         canTakeDamage = false;
-        currentHealth -= damage;        
+        currentHealth -= damage;
+        CameraShake.Instance.ShakeCam(5f,.1f);
         Debug.Log(currentHealth);
         if(currentHealth <= 0)
         {                        
             //Die animation
             Destroy(gameObject);
         }
+        KnockBackOnHit(enemyTransform, knockBackForce);
         StartCoroutine(InvisibleFrame(invisibleFrameTime));//Set timer for IFrame to deactivate
         //KnockBack
     }
@@ -55,14 +61,11 @@ public class Player : MonoBehaviour
         canTakeDamage = true;        
     }
 
-    public void EquipWeapon(GameObject _weapon)
-    {
-        Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
-    }
 
     public void KnockBackOnHit(Transform enemyTransfrom,float knockBackForce)
     {
         Vector3 hitDir = (transform.position - enemyTransfrom.position).normalized;
+        hitDir.y = 0;
         rb.AddForce(hitDir * knockBackForce, ForceMode.Impulse);
         StartCoroutine("KnockBackTimer",1f);
     }
@@ -70,6 +73,10 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         rb.velocity = Vector3.zero;
+    }
+    public void EquipWeapon(GameObject _weapon)
+    {
+        Instantiate(_weapon, weaponSocket.position,weaponSocket.rotation,weaponSocket);
     }
     public void Heal(float _healAmount)//Call when heal
     {
