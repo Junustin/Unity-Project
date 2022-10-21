@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
         Debug.Log(currentHealth);
         if(currentHealth <= 0)
         {                        
-            //Die animation
+            //Die animation            
             Destroy(gameObject);
         }
         KnockBackOnHit(enemyTransform, knockBackForce);
@@ -90,5 +90,10 @@ public class Player : MonoBehaviour
     public void DisableAttackHitbox()
     {
         meleeWeapon.AttackEnded();
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.ReloadCurrentLevel();
     }
 }
