@@ -31,6 +31,10 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;//Set current healh to max health when spawn            
         
     }
+    private void OnDestroy()
+    {
+        GameManager.instance.ReloadCurrentScene();
+    }
 
     public void TakeDamage(float damage,Transform enemyTransform,float knockBackForce)//Take damage function
     {
